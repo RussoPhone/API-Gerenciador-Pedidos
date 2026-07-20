@@ -7,3 +7,12 @@ def test_criar_pedido():
     print(pedido.status)
 
     assert pedido.status == StatusPedido.PENDENTE
+
+def test_pedido_pode_ser_finalizado():
+    pedido = Pedido(
+        id=1,
+        cliente="cliente"
+    )
+    pedido.finalizar()
+
+    assert pedido.status == StatusPedido.FINALIZADO

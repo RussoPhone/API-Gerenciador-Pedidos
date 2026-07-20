@@ -5,3 +5,9 @@ class Pedido:
         self.id = id
         self.cliente = cliente
         self.status = StatusPedido.PENDENTE
+
+    def finalizar(self):
+        self.status = StatusPedido.FINALIZADO
+
+    def cancelar(self):
+        self.status = StatusPedido.CANCELADO

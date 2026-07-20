@@ -4,5 +4,5 @@ class StatusPedido(Enum):
     PENDENTE = "pendente"
     PREPARANDO = "preparando"
     PRONTO = "pronto"
-    ENTREGUE = "entregue"
+    FINALIZADO = "finalizado"
     CANCELADO = "cancelado"
